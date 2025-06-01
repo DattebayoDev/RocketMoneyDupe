@@ -1,0 +1,18 @@
+{
+  "transactions": [
+    {
+      "name": "Starbucks",
+      "amount": 5.75,
+      "date": "2025-05-01",
+      "category": ["Food"],
+      "transaction_type": "EXPENSE"
+    },
+    {
+      "name": "Netflix",
+      "amount": 15.99,
+      "date": "2025-05-01",
+      "category": ["UNCATEGORIZED"],
+      "transaction_type": "EXPENSE"
+    }
+  ]
+}

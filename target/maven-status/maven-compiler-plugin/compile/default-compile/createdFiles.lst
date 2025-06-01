@@ -1,0 +1,11 @@
+com\yourname\finance\client\PlaidClient.class
+com\yourname\finance\controller\InsightsController.class
+com\yourname\finance\controller\PlaidController.class
+com\yourname\finance\FinanceTrackerApplication.class
+com\yourname\finance\dto\PlaidAccountDTO.class
+com\yourname\finance\dto\PlaidTransactionDTO.class
+com\yourname\finance\model\TransactionType.class
+com\yourname\finance\model\Category.class
+com\yourname\finance\model\Transaction.class
+com\yourname\finance\service\CategoryNormalizer.class
+com\yourname\finance\service\TransactionService.class

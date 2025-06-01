@@ -1,0 +1,15 @@
+C:\Users\a\Downloads\finance-tracker-app\src\main\java\com\yourname\finance\config\PlaidConfig.java
+C:\Users\a\Downloads\finance-tracker-app\src\main\java\com\yourname\finance\test\PlaidClientTest.java
+C:\Users\a\Downloads\finance-tracker-app\src\main\java\com\yourname\finance\model\TransactionType.java
+C:\Users\a\Downloads\finance-tracker-app\src\main\java\com\yourname\finance\controller\InsightsController.java
+C:\Users\a\Downloads\finance-tracker-app\src\main\java\com\yourname\finance\dto\PlaidAccountDTO.java
+C:\Users\a\Downloads\finance-tracker-app\src\main\java\com\yourname\finance\controller\PlaidController.java
+C:\Users\a\Downloads\finance-tracker-app\src\main\java\com\yourname\finance\dto\PlaidTransactionDTO.java
+C:\Users\a\Downloads\finance-tracker-app\src\main\java\com\yourname\finance\model\Transaction.java
+C:\Users\a\Downloads\finance-tracker-app\src\main\java\com\yourname\finance\mapper\TransactionMapper.java
+C:\Users\a\Downloads\finance-tracker-app\src\main\java\com\yourname\finance\service\CategoryNormalizer.java
+C:\Users\a\Downloads\finance-tracker-app\src\main\java\com\yourname\finance\service\TransactionService.java
+C:\Users\a\Downloads\finance-tracker-app\src\main\java\com\yourname\finance\client\PlaidClient.java
+C:\Users\a\Downloads\finance-tracker-app\src\main\java\com\yourname\finance\FinanceTrackerApplication.java
+C:\Users\a\Downloads\finance-tracker-app\src\main\java\com\yourname\finance\model\Category.java
+C:\Users\a\Downloads\finance-tracker-app\src\main\java\com\yourname\finance\service\impl\TransactionServiceImpl.java
