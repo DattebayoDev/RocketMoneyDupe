@@ -1,7 +1,10 @@
 package com.yourname.finance.dto;
 
+import lombok.Data;
+
 import java.math.BigDecimal;
 
+@Data
 public class CategorySummary {
     private String category;
     private BigDecimal amount;
@@ -11,11 +14,4 @@ public class CategorySummary {
         this.amount = amount;
     }
 
-    public String getCategory() {
-        return category;
-    }
-
-    public BigDecimal getAmount() {
-        return amount;
-    }
 }
