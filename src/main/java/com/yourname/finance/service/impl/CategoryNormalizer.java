@@ -4,20 +4,32 @@ import com.yourname.finance.model.Category;
 import com.yourname.finance.service.ICategoryNormalizer;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Map;
+
 @Service
 public class CategoryNormalizer implements ICategoryNormalizer {
-    @Override
-    public Category normalize(String raw) {
-        if (raw == null) return Category.UNCATEGORIZED;
-        String lower = raw.toLowerCase();
 
-        if (lower.contains("grocery") || lower.contains("supermarket")) return Category.FOOD;
-        if (lower.contains("restaurant") || lower.contains("dining")) return Category.FOOD;
-        if (lower.contains("uber") || lower.contains("lyft") || lower.contains("transport")) return Category.TRANSPORTATION;
-        if (lower.contains("rent") || lower.contains("housing")) return Category.HOUSING;
-        if (lower.contains("salary") || lower.contains("payroll")) return Category.INCOME;
+  private static final Map<Category, List<String>> mappings =
+      Map.of(
+          Category.FOOD,
+          List.of("grocery", "supermarket"),
+          Category.TRANSPORTATION,
+          List.of("transport", "lyft", "uber"));
 
-        return Category.UNCATEGORIZED;
+  @Override
+  public Category normalize(String raw) {
+    if (raw == null) return Category.UNCATEGORIZED;
+    String lower = raw.toLowerCase();
+
+    for (Map.Entry<Category, List<String>> entry : mappings.entrySet()) {
+      for (String value : entry.getValue()) {
+        if (lower.contains(value)) {
+          return entry.getKey();
+        }
+      }
     }
+      return Category.UNCATEGORIZED;
+  }
 }
 
